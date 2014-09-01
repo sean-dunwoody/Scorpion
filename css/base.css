@@ -1,0 +1,37 @@
+/*=====================================================================
+ *
+ * Filename: base.css
+ *
+ * Description
+ * -----------
+ * Base styles
+ *
+ *=====================================================================*/
+
+    /* apply a natural box layout model to all elements */
+    * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+    /* Disable hover whilst scrolling for performance reasons
+        http://www.thecssninja.com/javascript/pointer-events-60fps
+       Can also be used for elements you wish to disable hover events for */
+    .disable-hover,
+    .disable-hover * {
+      pointer-events: none !important;
+    }
+
+    html { font-size: 62.5%; } /* font-size: 62.5% now means that 1.0 rem = 10px */
+    body { font-family: arial; font-size: 1.4rem; overflow-y: scroll; } /* Overflow-y is to prevent the scrollbar shunting */
+    body > div { font-size: 1.4rem; } /* Fix for Chrome REM bug */
+    html, body { height: 100%; }
+
+    h1 {  }
+    h2 {  }
+    h3 {  }
+    h4 {  }
+    h5 {  }
+    h6 {  }
+
+    p {  }
+
+    a {  }
+    a:hover {  }

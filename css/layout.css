@@ -1,0 +1,128 @@
+/*=====================================================================
+ *
+ * Filename: layout.css
+ *
+ * Description
+ * -----------
+ * Grids/Layouts
+ *
+ *=====================================================================*/
+
+    .lfloat { float: left; }
+    .rfloat { float: right; }
+    .overflow { overflow: hidden; }
+
+    .clearfix:after { clear: both; content: ""; display: table; }
+    .clear { clear: both; }
+
+    .align-center { text-align: center; }
+    .align-left { text-align: left; }
+    .align-right { text-align: right; }
+
+    .visible-desktop { display: block; }
+    .visible-tablet { display: none; }
+    .visible-phone { display: none; }
+    .hidden-desktop { display: none; }
+    .hidden-tablet { display: block; }
+    .hidden-phone { display: block; }
+
+    /* Grid System ========================================================*/
+        .wrapper-center { background: #fff; margin: 0 auto; max-width: 980px; padding: 0 1%; position: relative; }
+        
+        .grid-line { margin-bottom: 1%; }
+        .grid-line:after { clear: both; content: ""; display: block; height: 0; width: 0; }
+
+        .grid { display: inline; float: left; margin-left: 1%; padding: 0.4rem 1rem; }
+        .grid:first-child { margin: 0; }
+        .grid:after { clear: both; content: ""; display: block; height: 0; width: 0; }
+        
+        .one-whole { margin-left: 0; width: 100%; }
+        .one-half { width: 49.5%; }
+        .one-third { width: 32.6666%; }
+        .two-thirds { width: 65.9999%; }
+        .one-quarter { width: 24.25%; }
+        .two-quarters { width: 49.5%; }
+        .three-quarters { width: 74.75%; }
+        .one-fifth { width: 19.2%; }
+        .two-fifths { width: 39.4%; }
+        .three-fifths { width: 59.6%; }
+        .four-fifths { width: 79.8%; }
+        .one-seventh { width: 13.14%; }
+        .two-sevenths { width: 26.28%; }
+        .three-sevenths { width: 39.42%; }
+        .four-sevenths { width: 52.56%; }
+        .five-sevenths { width: 65.6%; }
+        .six-sevenths { width: 79.74%; }
+        .one-eight { width: 11.625%; }
+        .two-eights { width: 24.25%; }
+        .three-eights { width: 36.875%; }
+        .four-eights { width: 49.5%; }
+        .five-eights { width: 62.125%; }
+        .six-eights { width: 74.75%; }
+        .seven-eights { width: 87.37%; }
+        .one-tenth { width: 9.1%; }
+        .two-tenths { width: 19.2%; }
+        .three-tenths { width: 29.3%; }
+        .four-tenths { width: 39.4%; }
+        .five-tenths { width: 49.5%; }
+        .six-tenths { width: 59.6%; }
+        .seven-tenths { width: 69.7%; }
+        .eight-tenths { width: 79.8%; }
+        .nine-tenths { width: 89.9%; }
+
+    /* Smaller Screens ====================================================*/
+        @media screen and (min-width: 960px) and (max-width: 700px) {
+        }
+
+    /* Tablet =============================================================*/
+        @media screen and (max-width: 700px) {
+            html { font-size: 60%; }
+            .visible-desktop { display: none; }
+            .visible-tablet { display: block; }
+            .visible-phone { display: none; }
+            .hidden-tablet { display: none; }
+            
+            /* m = medium */
+            .m-one-whole { width: 100%; }
+            .m-one-half { width: 49.5%; }
+            .m-one-third { width: 32.6666%; }
+            .m-two-thirds { width: 65.9999%; }
+            .m-one-quarter { width: 24.25%; }
+            .m-two-quarters { width: 49.5%; }
+            .m-three-quarters { width: 74.75%; }
+            .m-one-fifth { width: 19.2%; }
+            .m-two-fifths { width: 39.4%; }
+            .m-three-fifths { width: 59.6%; }
+            .m-four-fifths { width: 79.8%; }
+            .m-one-eight { width: 11.625%; }
+            .m-two-eights { width: 24.25%; }
+            .m-three-eights { width: 36.875%; }
+            .m-four-eights { width: 49.5%; }
+            .m-five-eights { width: 62.125%; }
+            .m-six-eights  { width: 74.75%; }
+            .m-seven-eights { width: 87.37%; }
+        }
+
+    /* Mobile =============================================================*/
+        @media screen and (max-width: 600px) {
+            html { font-size: 58%; }
+            .visible-phone { display: block; }
+            .hidden-phone { display: none; }
+            
+            .grid-line { margin-bottom: 0; }
+            
+            /* s = small */
+            .s-one-whole { padding: 0 1%; width: 100%; }
+            .grid.s-one-whole { margin: 0; }
+            .s-one-half { width: 49.5%; }
+            .s-one-third { width: 32.6666%; }
+            .s-two-thirds { width: 65.9999%; }
+            .s-one-quarter { width: 24.25%; }
+            .s-two-quarters { width: 49.5%; }
+            .s-three-quarters { width: 74.75%; }
+            .s-one-fifth { width: 19.2%; }
+            .s-two-fifths { width: 39.4%; }
+            .s-three-fifths { width: 59.6%; }
+            .s-four-fifths { width: 79.8%; }
+        }
+

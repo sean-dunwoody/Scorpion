@@ -1,0 +1,29 @@
+/*=====================================================================
+ *
+ * Filename: tables.css
+ *
+ * Description
+ * -----------
+ * tables
+ *
+ *=====================================================================*/
+
+    .table { border: 1px solid #777; border-collapse: separate; }
+    .table th,
+    .table td { border: 1px solid #777; border-left: 0; border-top: 0; padding: 0.6rem 0.8rem; }
+    .table th { background: #eee; }
+    .table td:last-child,
+    .table th:last-child { border-right: 0; }
+    .table tr:last-child td,
+    .table tr:last-child th { border-bottom: 0; }
+
+    .table-rounded { border-radius: 1rem; overflow: hidden; }
+
+    .table-stretch { width: 100%; }
+
+    .table-gap { margin: 0 0 2rem 0; }
+
+    /* Mobile =============================================================*/
+        @media screen and (max-width: 600px) {
+            .table { overflow: auto; width: 100%; }
+        }
