@@ -1,0 +1,70 @@
+/*=====================================================================
+ *
+ * Filename: forms.css
+ *
+ * Description
+ * -----------
+ * Form Styles
+ *
+ *=====================================================================*/
+
+    /* A class for each line of the form */
+    .form-line { display: block; padding: 0.3rem 0;}
+    .form-line:after { clear: both; content: ""; display: table; }
+
+    input.warning { background: #eee; border-color: #ad8949; }
+    input.error { background: #eee; border-color: #a44141; }
+    input.info { background: #eee; border-color: #4a8cba; }
+    input.success { background: #eee; border-color: #4c772f; }
+
+    .label { display: inline-block; min-height: 2.6rem; padding: 0 0.6rem 0 0; }
+    .text-input,
+    .text-area {
+        background: #fbfbfb;
+        border: 1px solid #999;
+        border-radius: 0.3rem;
+        color: #111;
+        max-width: 100%;
+        min-height: 2.6rem;
+        padding: 0.3rem 0.6rem;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    .text-input:focus,
+    .text-area:focus { background: #fff; -webkit-box-shadow: 0 0 2px 0 #666; box-shadow: 0 0 2px 0 #aaa; }
+    .checkbox {  }
+
+    /* Styles for rounded corners on form inputs/lables on the same line */
+    .input-prepend .text-input { border-radius: 0 0.3rem 0.3rem 0; }
+    .input-append .text-input { border-radius: 0.3rem 0 0 0.3rem; float: left; }
+    .input-append.input-prepend .text-input { border-radius: 0; }
+
+    .add-on { background: #eee; border: 1px solid #999; float: left; min-height: 2.6rem; padding: 0.3rem 0.6rem; }
+    .add-on:first-child { border-radius: 0.3rem 0 0 0.3rem;  border-right-width: 0;}
+    .add-on:last-child { border-left-width: 0; border-radius: 0 0.3rem 0.3rem 0; }
+
+    /* Status styles, e.g. this form input is incorrect */
+    .muted { color: #999; }
+    .text-warning { color: #ad8949; }
+    .text-error { color: #a44141; }
+    .text-info { color: #4a8cba; }
+    .text-success { color: #4c772f; }
+
+    .warning { background: #ad8949; color: #fff; }
+    .error { background: #a44141; color: #fff; }
+    .info { background: #4a8cba; color: #fff; }
+    .success { background: #4c772f; color: #fff; }
+
+    /* Mobile =============================================================*/
+        @media screen and (max-width: 600px) {
+            .label { display: block; }
+            .text-input,
+            .text-area {
+                width: 100%;
+            }
+
+            .add-on { clear: both; float: none; padding: 0.5rem 0.6rem; text-align: center; width: 100%; }
+            .add-on:first-child { border-bottom-width: 0; border-radius: 0.3rem 0.3rem 0 0; border-right-width: 1px; }
+            .add-on:last-child { border-left-width: 1px; border-radius: 0 0 0.3rem 0.3rem; border-top-width: 0; }
+        }
