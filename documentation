@@ -1,0 +1,2 @@
+
+The body is given a "font-size" of "62.5%" so that 1em equates to 10px, this allows you size everything easily in em, which means that if you ever need to implement accessibility resizing on a site, that it can be done rather easily.
